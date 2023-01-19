@@ -1,0 +1,52 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #e0e1dd;
+    text-align: left;
+    color: teal;
+}
+
+.footer>div {
+    margin: 20px;
+}
+
+.footer>div>h3 {
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.language {
+    display: flex;
+}
+
+.language>img {
+    width: 6%;
+}
+
+.footer-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.same-footer {
+    background-color: #e0e1dd;
+}
+
+.about-dell {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 500;
+    color: teal;
+}
+
+.about-dell-bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding: 20px;
+    color: teal;
+}
