@@ -1,0 +1,27 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.cart {
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.cart>img {
+    width: 20%;
+}
+
+.find-store {
+    font-size: 15px;
+}
+
+.find-store:hover {
+    text-decoration: underline;
+}
