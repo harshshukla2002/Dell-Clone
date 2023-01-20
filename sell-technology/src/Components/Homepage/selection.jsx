@@ -1,6 +1,10 @@
 import { Menu, MenuButton, MenuList, Button, HStack } from "@chakra-ui/react"
+import { useContext } from "react";
+import { WebContext } from "../../Context/websiteContext";
 
 function Selection() {
+    const { handleforHomeLaptop, handleforBuisnessLaptop } = useContext(WebContext);
+
     return (
         <HStack spacing="10px">
             <div className="selection-div"> <Menu>
@@ -9,8 +13,8 @@ function Selection() {
                     Laptop
                 </MenuButton>
                 <MenuList>
-                    <Button bg='white'>For Home</Button> <br />
-                    <Button bg="white">For Buisness</Button>
+                    <Button bg='white' onClick={() => handleforHomeLaptop()}>For Home</Button> <br />
+                    <Button bg="white" onClick={() => handleforBuisnessLaptop()}>For Buisness</Button>
                 </MenuList>
             </Menu></div>
 
