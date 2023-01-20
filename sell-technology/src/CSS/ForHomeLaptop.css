@@ -1,0 +1,135 @@
+.laptop-2in1-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.laptop-2in1-wrapper>div:nth-child(1) {
+    font-size: 20px;
+    width: 35%;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.laptop-2in1-wrapper>div:nth-child(2) {
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.forHomePageContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.filter-wrapper {
+    width: 50%;
+    text-align: left;
+}
+
+.filter-wrapper>div {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ffc8dd;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.filter-heading {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ffc8dd;
+    color: #84a59d;
+    border-radius: 5px;
+}
+
+.home-laptop-wrapper{
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.horizontal-direction{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.h-black-line{
+    border-left: 3px solid black;
+}
+
+.inspiron-laptop>div:nth-child(1){
+    width: 60%;
+}
+
+.inspiron-laptop{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.laptops-overview{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.laptops-overview>div{
+    margin: 10px;
+}
+
+.laptop-selection{
+    padding: 20px;
+    background-color: #ffe5ec;
+}
+
+.grid-div-forHome{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-div-forHome>div{
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 50%;
+}
+
+.rating{
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.round-wrapper{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px 20px;
+    color: blue;
+    background-color: #ffc8dd;
+    margin: 20px;
+}
+
+.round-wrapper:hover{
+    border: 2px solid black;
+    color:black;
+    cursor: pointer;
+}
+
+.hstack-section{
+    width: 65%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}

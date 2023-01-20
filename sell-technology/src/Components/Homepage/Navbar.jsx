@@ -2,12 +2,15 @@ import { Input, Icon, Button } from '@chakra-ui/react'
 import { Search2Icon, ChevronDownIcon, LockIcon, PhoneIcon } from '@chakra-ui/icons'
 import { HStack, Flex, Spacer } from '@chakra-ui/react'
 import { Menu, MenuButton, MenuList } from '@chakra-ui/react'
+import { useContext } from 'react'
+import { WebContext } from '../../Context/websiteContext'
 
 function Navbar() {
+    const { handleHomePage } = useContext(WebContext);
     return (
         <Flex alignItems="center" justifyContent="space-between">
             <div className='logo' style={{ margin: "20px", width: "10%" }}>
-                <img src="https://i.postimg.cc/15GLg3Zc/Black-Modern-Laptop-Logo.png" alt="sell-technology" />
+                <img onClick={() => handleHomePage()} src="https://i.postimg.cc/15GLg3Zc/Black-Modern-Laptop-Logo.png" alt="sell-technology" />
             </div>
             <HStack w="50%" m="10px" paddingLeft="70px">
                 <Input placeholder="Search Sell" />

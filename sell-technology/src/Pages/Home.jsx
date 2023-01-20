@@ -1,7 +1,7 @@
-import Content from "../Components/Content";
-import DropDownList from "../Components/DropDownLists";
-import Navbar from "../Components/Navbar";
-import Selection from "../Components/selection";
+import Content from "../Components/Homepage/Content";
+import DropDownList from "../Components/Homepage/DropDownLists";
+import Navbar from "../Components/Homepage/Navbar";
+import Selection from "../Components/Homepage/selection";
 import "../CSS/homePage.css"
 import '../CSS/navbar.css'
 import '../CSS/footer.css'
