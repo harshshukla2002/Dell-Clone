@@ -1,15 +1,9 @@
-import { useContext } from "react";
-import { WebContext } from "../Context/websiteContext";
-import HomePage from "./Home";
-import ForHomeLaptop from "./ForHome";
-import ForBusinessLaptop from "./ForBusiness";
+import AllRoutes from "../Routes/AllRoutes";
 
 function CompleteApp() {
-    const { forhomelaptop, forbusinesslaptop } = useContext(WebContext);
-
     return (
         <>
-            {forhomelaptop ? <ForHomeLaptop /> : forbusinesslaptop ? <ForBusinessLaptop /> : <HomePage />}
+            <AllRoutes />
         </>
     )
 }

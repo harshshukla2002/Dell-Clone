@@ -4,30 +4,21 @@ import { createContext } from "react"
 export const WebContext = createContext();
 
 function WebsiteContext({ children }) {
-    const [homepage, setHomepage] = useState(true);
-    const [forhomelaptop, setForHomeLaptop] = useState(false);
-    const [forbusinesslaptop, setForBusinessLaptop] = useState(false);
+    const [userName, setUserName] = useState("");
+    const [isAuth, setAuth] = useState(false);
 
-    const handleHomePage = () => {
-        setHomepage(true);
-        setForHomeLaptop(false);
-        setForBusinessLaptop(false);
+    const handlesetName = (name) => {
+        setUserName(name);
+        setAuth(true);
     }
 
-    const handleforHomeLaptop = () => {
-        setHomepage(false);
-        setForHomeLaptop(true);
-        setForBusinessLaptop(false);
-    }
-
-    const handleforBuisnessLaptop = () => {
-        setHomepage(false);
-        setForHomeLaptop(false);
-        setForBusinessLaptop(true);
+    const LogoutUser = () => {
+        setUserName('');
+        setAuth(false);
     }
 
     return (
-        <WebContext.Provider value={{ homepage, forhomelaptop, handleHomePage, handleforHomeLaptop, forbusinesslaptop, handleforBuisnessLaptop }}>{children}</WebContext.Provider>
+        <WebContext.Provider value={{ handlesetName, userName, LogoutUser, isAuth }}>{children}</WebContext.Provider>
     )
 }
 
