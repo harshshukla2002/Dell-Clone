@@ -1,9 +1,8 @@
 import { Menu, MenuButton, MenuList, Button, HStack } from "@chakra-ui/react"
-import { useContext } from "react";
-import { WebContext } from "../../Context/websiteContext";
+import { useNavigate } from "react-router-dom";
 
 function Selection() {
-    const { handleforHomeLaptop, handleforBuisnessLaptop } = useContext(WebContext);
+    const navigate = useNavigate();
 
     return (
         <HStack spacing="10px">
@@ -13,8 +12,8 @@ function Selection() {
                     Laptop
                 </MenuButton>
                 <MenuList>
-                    <Button bg='white' onClick={() => handleforHomeLaptop()}>For Home</Button> <br />
-                    <Button bg="white" onClick={() => handleforBuisnessLaptop()}>For Buisness</Button>
+                    <Button bg='white' onClick={() => navigate('/forhome')}>For Home</Button> <br />
+                    <Button bg="white" onClick={() => navigate('/forbusiness')}>For Buisness</Button>
                 </MenuList>
             </Menu></div>
 
