@@ -2,6 +2,7 @@ import { Button, Select, HStack } from "@chakra-ui/react";
 import FilterPart from "./Filterpart";
 
 function ForHomeLaptopContent() {
+    const value = 1;
     return (
         <>
             <div className="laptop-2in1-wrapper">
@@ -15,7 +16,7 @@ function ForHomeLaptopContent() {
             </div>
             <div className="forHomePageContent">
                 <div className="filter-wrapper">
-                    <FilterPart />
+                    <FilterPart value={value}/>
                 </div>
                 <div className="home-laptop-wrapper">
                     <div className="inspiron-laptop">

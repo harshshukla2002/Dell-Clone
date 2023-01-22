@@ -1,0 +1,37 @@
+.admin-navbar {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.table {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+
+.link-hover {
+    padding: 10px;
+}
+
+.link-hover:hover {
+    background: #fcf6bd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.add-laptop-form {
+    width: 40%;
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+}
+
+.add-laptop-form>div{
+    margin: 20px;
+}
+
+.rom-selection{
+    display: flex;
+}

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import AdminLogin from "../Pages/AdminLogin";
+import AdminPage from "../Pages/AdminPage";
 import CreateAccount from "../Pages/CreateAccount";
 import ForBusinessLaptop from "../Pages/ForBusiness";
 import ForHomeLaptop from "../Pages/ForHome";
@@ -15,7 +15,7 @@ function AllRoutes() {
             <Route path="/forbusiness" element={<ForBusinessLaptop />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/createaccount" element={<CreateAccount />} />
-            <Route path="/admin" element={<PrivateRoutes><AdminLogin /></PrivateRoutes>} />
+            <Route path='/admin/*' element={<PrivateRoutes><AdminPage /></PrivateRoutes>} />
         </Routes>
     )
 }

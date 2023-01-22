@@ -1,19 +1,16 @@
-import { useEffect } from "react";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { WebContext } from "../Context/websiteContext";
 
 function PrivateRoutes({ children }) {
     const { isAuth } = useContext(WebContext);
-    const navigate = useNavigate();
+    console.log(isAuth)
 
-    useEffect(() => {
-        if (!isAuth) {
-            return navigate('/')
-        }
+    if (!isAuth) {
+        return <Navigate to='/' />
+    }
 
-        return children
-    }, [isAuth,children,navigate])
+    return children
 }
 
 export default PrivateRoutes;

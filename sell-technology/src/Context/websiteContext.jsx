@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createContext } from "react"
+import { Navigate } from "react-router-dom";
 
 export const WebContext = createContext();
 
@@ -15,6 +16,7 @@ function WebsiteContext({ children }) {
     const LogoutUser = () => {
         setUserName('');
         setAuth(false);
+        return <Navigate to='/' />
     }
 
     return (

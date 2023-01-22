@@ -49,7 +49,7 @@ function Navbar() {
                                 </div>
                                 <br />
                                 <Button w='90%' fontWeight="100px" colorScheme="blue" onClick={() => navigate('/signup')}>Sign In</Button>  <br /> <br />
-                                <Button w='90%' fontWeight="100px" colorScheme="blue" variant='outline'>Create an Account</Button> <br /> <br />
+                                <Button w='90%' fontWeight="100px" colorScheme="blue" variant='outline' onClick={() => navigate('/createaccount')}>Create an Account</Button> <br /> <br />
                                 <Button w='90%' fontWeight="100px" colorScheme="blue" variant='outline'>Premier Sign In</Button> <br /> <br />
                                 <Button w='90%' fontWeight="100px" colorScheme="blue" variant='outline'>Partner Program Sign In</Button><br /> <br />
                             </MenuList>

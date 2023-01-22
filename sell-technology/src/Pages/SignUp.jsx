@@ -30,14 +30,19 @@ function SignUp() {
     }, [])
 
     const handleSignUp = () => {
+        let log = false;
         loginUsersData.forEach(item => {
             if (loginFormState.email === item.email && loginFormState.password === item.password) {
                 handlesetName(item.firstname);
-                alert("Logged In");
-                return navigate('/')
+                log = true;
             }
         })
-        alert("User Not Found")
+        if (log === true) {
+            alert("Logged In");
+            navigate('/')
+        } else {
+            alert('User Not Found')
+        }
     }
 
     const handleTogglePassword = () => {
