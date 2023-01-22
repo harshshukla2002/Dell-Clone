@@ -1,7 +1,10 @@
 import { Button } from "@chakra-ui/react"
+import { useContext } from "react";
+import { WebContext } from "../../Context/websiteContext";
 import Footer from "./footer";
 
 function Content() {
+    const { userName } = useContext(WebContext);
     return (
         <>
             <div className="republic-day">
@@ -17,7 +20,7 @@ function Content() {
                 </div>
             </div>
             <div className="welcome-section">
-                <h3>Welcome Back</h3>
+                <h3>Welcome Back {userName}</h3>
                 <div className="your-info">
                     <div>
                         <p style={{ fontSize: "20px" }}>Best Seller</p>

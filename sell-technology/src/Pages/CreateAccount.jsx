@@ -1,9 +1,10 @@
 import { Button, Checkbox, FormLabel, Heading, Input, } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../CSS/signup.css'
 import axios from 'axios'
 import { InfoOutlineIcon } from "@chakra-ui/icons"
+import { WebContext } from '../Context/websiteContext';
 const emptyForm = {
     firstname: "",
     lastname: "",
@@ -15,6 +16,7 @@ function CreateAccount() {
     const [passwordShow, setPasswordShow] = useState(false);
     const [loginFormState, setLoginFormState] = useState(emptyForm);
     const navigate = useNavigate();
+    const { handlesetName } = useContext(WebContext);
 
     const handleCreateAccount = () => {
         axios({
@@ -24,6 +26,8 @@ function CreateAccount() {
         }).then(() => {
             setLoginFormState(emptyForm);
             alert("Account Created")
+            navigate("/")
+            handlesetName(loginFormState.firstname)
         })
             .catch((error) => console.log(error))
     }

@@ -1,13 +1,13 @@
 import { Checkbox, Radio, RadioGroup } from "@chakra-ui/react";
 
-function FilterPart() {
+function FilterPart(value) {
     return (
 
         <>
             <div className="filter-heading">Filter Result</div>
             <div>
                 <h2>Refined By</h2>
-                <RadioGroup value="1">
+                <RadioGroup value={value.value}>
                     <Radio value="1">For Home</Radio> <br />
                     <Radio value="2">For Business</Radio>
                 </RadioGroup>
